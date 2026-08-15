@@ -48,11 +48,11 @@ def run_question(question: str) -> None:
         retriever, verifier = get_local_pipeline()
         evidence = retriever.retrieve(question)
         verification = verifier.verify(question, evidence)
-    except Exception:
+        except Exception as e:
         st.session_state.messages.append(
             {
                 "role": "assistant",
-                "content": "The question could not be processed. Please try again.",
+                 "content": f"Error: {type(e).__name__}: {e}",
                 "citations": [],
                 "refused": True,
             }
@@ -72,7 +72,7 @@ def run_question(question: str) -> None:
 
     try:
         answer = AnswerCitationAgent().answer(question, verification)
-    except Exception:
+        except Exception as e:
         answer = "The verified answer could not be generated. Please try again."
 
     st.session_state.messages.append(
