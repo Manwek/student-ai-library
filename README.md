@@ -113,7 +113,7 @@ streamlit run app.py
 
 The application normally opens at:
 
-<http://localhost:8501>
+[<http://localhost:8501>](https://student-ai-library.streamlit.app/)
 
 ## Running Tests
 
