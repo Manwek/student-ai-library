@@ -1,9 +1,5 @@
-# Secrets and local environment
 .env
 .venv/
-
-# Local vector database
-data/chroma_db/
 
 # Python cache files
 __pycache__/
