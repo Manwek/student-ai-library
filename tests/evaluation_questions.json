@@ -1,0 +1,82 @@
+[
+  {
+    "id": "answerable_01",
+    "question": "What three cognitive processes underlying strategic decision-making does the AI strategic decision-making paper examine?",
+    "answerable": true,
+    "expected_behavior": "answer",
+    "expected_documents": ["ai_strategic_decision_making.pdf"],
+    "rationale": "The paper explicitly identifies search, representation, and aggregation as the cognitive processes it examines."
+  },
+  {
+    "id": "answerable_02",
+    "question": "Which four strategic decision-making tools does the AI strategic decision-making paper reimagine as AI-augmented?",
+    "answerable": true,
+    "expected_behavior": "answer",
+    "expected_documents": ["ai_strategic_decision_making.pdf"],
+    "rationale": "The paper's discussion of AI-augmented tools names Scenario Planning, Porter’s Five Forces, Devil’s Advocate, and Wisdom of the Crowd."
+  },
+  {
+    "id": "answerable_03",
+    "question": "What four types of interaction does the digital density framework identify for AI-enabled value propositions?",
+    "answerable": true,
+    "expected_behavior": "answer",
+    "expected_documents": ["managing_ai_digital_density_framework.pdf"],
+    "rationale": "The framework defines AI-enabled value propositions through automation, anticipation, coordination, and personalization interactions."
+  },
+  {
+    "id": "answerable_04",
+    "question": "What governance principles does the digital density framework say managers should address when introducing AI?",
+    "answerable": true,
+    "expected_behavior": "answer",
+    "expected_documents": ["managing_ai_digital_density_framework.pdf"],
+    "rationale": "The framework's governance discussion covers fairness, accountability, transparency, ethics, and practical wisdom."
+  },
+  {
+    "id": "answerable_05",
+    "question": "According to Corporate Management in the Age of AI, what are the two broad categories of corporate leadership tasks?",
+    "answerable": true,
+    "expected_behavior": "answer",
+    "expected_documents": ["corporate_management_in_age_of_ai.pdf"],
+    "rationale": "The article's corporate-leadership discussion divides directors' and managers' work into administrative tasks and judgment work."
+  },
+  {
+    "id": "unanswerable_01",
+    "question": "What is the capital city of France?",
+    "answerable": false,
+    "expected_behavior": "refuse",
+    "expected_documents": [],
+    "rationale": "The document collection discusses AI, strategy, and corporate management, not national capitals."
+  },
+  {
+    "id": "unanswerable_02",
+    "question": "Who wrote Pride and Prejudice?",
+    "answerable": false,
+    "expected_behavior": "refuse",
+    "expected_documents": [],
+    "rationale": "The authorship of this novel is unrelated to the subjects covered by the three PDFs."
+  },
+  {
+    "id": "unanswerable_03",
+    "question": "What is the chemical symbol for gold?",
+    "answerable": false,
+    "expected_behavior": "refuse",
+    "expected_documents": [],
+    "rationale": "The PDFs do not cover chemical elements or their symbols."
+  },
+  {
+    "id": "unanswerable_04",
+    "question": "What is the current population of Japan?",
+    "answerable": false,
+    "expected_behavior": "refuse",
+    "expected_documents": [],
+    "rationale": "The collection contains no population estimates or demographic profile of Japan."
+  },
+  {
+    "id": "unanswerable_05",
+    "question": "Who won the 2024 UEFA Champions League final?",
+    "answerable": false,
+    "expected_behavior": "refuse",
+    "expected_documents": [],
+    "rationale": "Sports results are outside the topics and evidence of the three AI and management PDFs."
+  }
+]

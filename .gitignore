@@ -1,0 +1,15 @@
+# Secrets and local environment
+.env
+.venv/
+
+# Local vector database
+data/chroma_db/
+
+# Python cache files
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# Streamlit cache files
+.streamlit/cache/
