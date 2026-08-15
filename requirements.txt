@@ -5,3 +5,4 @@ streamlit
 python-dotenv
 google-genai
 pytest
+torchvision
