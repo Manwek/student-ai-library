@@ -401,4 +401,3 @@ st.markdown(
     '<div class="footer">Student AI Library • Grounded RAG Demonstration</div>',
     unsafe_allow_html=True,
 )
-```
