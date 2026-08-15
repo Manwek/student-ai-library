@@ -69,6 +69,12 @@ def run_question(question: str) -> None:
         retriever, verifier = get_local_pipeline()
         evidence = retriever.retrieve(question)
         verification = verifier.verify(question, evidence)
+        st.info(
+    f"DEBUG — Retrieved: {len(evidence)} chunks | "
+    f"Best distance: {verification.best_distance} | "
+    f"Threshold: {verification.threshold} | "
+    f"Reason: {verification.reason}"
+)
 
     except Exception as e:
         st.session_state.messages.append(
