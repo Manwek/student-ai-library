@@ -139,7 +139,14 @@ st.markdown(
             margin: 0.9rem 0 1.3rem;
         }
         .grounded strong { color: #174d43; }
-        .suggestion-label/* Suggested question buttons */
+        .suggestion-label {
+    color: #536d8a;
+    font-size: 0.88rem;
+    font-weight: 600;
+    margin: 0.15rem 0 0.35rem;
+}
+
+/* Suggested question buttons */
 .stButton > button {
     background: #ffffff !important;
     color: #315a7d !important;
@@ -159,13 +166,31 @@ st.markdown(
     border-color: #8eabc4 !important;
     box-shadow: 0 6px 16px rgba(31, 55, 80, 0.10) !important;
     transform: translateY(-1px);
-} {
-            color: #536d8a;
-            font-size: 0.88rem;
-            font-weight: 600;
-            margin: 0.15rem 0 0.35rem;
+}
         }
-        .chat-user {
+/* Research question area */
+.question-label {
+    color: #19324d;
+    font-size: 1.08rem;
+    font-weight: 700;
+    margin: 1.6rem 0 0.65rem;
+}
+
+div[data-testid="stTextInput"] input {
+    background: #ffffff !important;
+    color: #19324d !important;
+    border: 1px solid #c9d9e8 !important;
+    border-radius: 14px !important;
+    padding: 0.85rem 1rem !important;
+    font-size: 1rem !important;
+    box-shadow: 0 3px 12px rgba(31, 55, 80, 0.05) !important;
+}
+
+div[data-testid="stTextInput"] input:focus {
+    border-color: #6d8fb0 !important;
+    box-shadow: 0 0 0 3px rgba(109, 143, 176, 0.14) !important;
+}       
+ .chat-user {
             background: #e4edf8;
             border-left: 4px solid #5e83aa;
             border-radius: 10px;
@@ -239,7 +264,10 @@ for column, suggestion in zip(suggestion_columns, SUGGESTED_QUESTIONS):
     if column.button(suggestion, key=f"suggestion_{suggestion}", use_container_width=True):
         run_question(suggestion)
 
-st.markdown("### Ask the library")
+st.markdown(
+    '<div class="question-label">💬 Ask your research question</div>',
+    unsafe_allow_html=True,
+)
 question = st.text_input(
     "Your question",
     placeholder="e.g. What governance principles should managers consider when adopting AI?",
