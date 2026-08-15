@@ -1,4 +1,3 @@
-```python
 """Streamlit interface for the Student AI Library."""
 
 from pathlib import Path
