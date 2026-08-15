@@ -11,7 +11,7 @@ EMBEDDING_MODEL_NAME = "all-MiniLM-L6-v2"
 
 # The approved model files are now cached locally, so embeddings run offline and no
 # further model download or update check is attempted.
-EMBEDDING_LOCAL_FILES_ONLY = True
+EMBEDDING_LOCAL_FILES_ONLY = False
 
 CHROMA_COLLECTION_NAME = "student_ai_library_chunks"
 
